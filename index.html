@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    bg{
+      width:900px;
+      height:900px;
+      border:5px dotted black;
+      position:absolute;
+      margin-left: 200px;
+    }
+   
+    .container{
+      width:748px;      
+      height:748px;
+      margin:50px 200px 50px 200px;
+      
+      display:grid;
+      grid-template-columns:320px 198px 153px 50px;
+      grid-template-rows:414px 130px 155px 20px;
+     background-color: black;
+      grid-auto-rows:20px;
+      gap:9px;
+    }
+    .red{
+      background-color: red;
+      border-right: 5px solid black;
+      border-bottom: 5px solid black;
+    }
+    #tw{
+      background-color: whitesmoke;
+      border-bottom: 5px solid black;
+      grid-area:1/2/2/5;
+      
+    }
+    #three{
+      background-color: whitesmoke;
+      border-right: 5px solid black;
+      border-bottom: 5px solid black;
+      grid-area:2/1/4/2;
+    }
+    #fr{
+      background-color: whitesmoke;
+      border-bottom: 5px solid black;
+      border-right: 5px solid black;
+      width:351px;
+      grid-area:2/2/4/4;
+    }
+    #fv{
+      background-color:#004592;
+      width:50px;
+      height:130px;
+      border-bottom: 10px solid black;
+      grid-area:2/4/3/5;
+
+    }
+    #sx{
+      background-color: whitesmoke;
+      grid-area:4/1/5/2;
+    }
+   
+    .yellow{
+      background-color: yellow;      
+      width:198px;
+      grid-area:4/2/5/3;
+      
+    }
+    .black{
+      background-color: black;
+      grid-area:4/3/5/4;
+      
+      
+    }
+    .nine{
+      background-color: whitesmoke;
+      height:180px;
+      width:50px;
+     grid-area:3/4/4/5;
+      
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="bg">
+  <div class="container ">
+    <div class="red"></div>
+    <div id="tw"></div>
+    <div id="three"></div>
+    <div id="fr"></div>
+    <div id="fv"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+    <div id="sx"></div>
+    <div class="nine"></div>
+  </div>
+</div>
+</body>
+
+</html>
